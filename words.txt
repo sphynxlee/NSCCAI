@@ -1,0 +1,21 @@
+20230908:
+synapses 突触
+dendrite 枝晶
+perceptron 感知器
+sigmoid 乙状
+embryo 胚
+threshold 门槛
+substitute 代替
+nand gate
+
+
+20230911:
+Neural Network:
+After your quiz is complete, I would like you to each send me at least one question that you think _should_ have appeared on the quiz. 
+
+You can send up to 3 questions each – I don't promise to use any of them. But you get your question in the pool and there's a good chance you'll see it at some point.
+
+Topic in AI
+four topics
+1. Definition of AI
+ref needed.
