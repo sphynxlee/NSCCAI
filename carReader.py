@@ -1,10 +1,10 @@
-# print pwd
-# import os
-# pwd = os.getcwd() + '\NSCCAI\cars.csv'
-# print(pwd);
+import os
+pwd = os.getcwd()
+print('pwd is: ', pwd);
+pwd = pwd + '/NSCCAI/cars.csv'
 
 # open the cars.csv file
-file = open('cars.csv', 'r');
+file = open(pwd, 'r');
 print(file.read());
 # for line in file:
 #     print(line);
