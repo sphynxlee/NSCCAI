@@ -32,7 +32,7 @@ def reverse_list(list):
         reverse_list.append(list[pointer])
         pointer -= 1
     return reverse_list
-print("reverse the list: ", reverse_list(cars_brand))
+print("reverse the list: ", reverse_list(number_list))
 
 # replace_in_list function
 def replace_in_list(list, old, new):
