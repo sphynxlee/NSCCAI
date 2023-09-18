@@ -29,7 +29,7 @@ numberDict = {
     'x': '9',
     'y': '9',
     'z': '9',
-}
+};
 vanityNumber = '1-800-HOLIDAY';
 def phoneWordToNumber(phoneWord):
     number = '';
