@@ -41,3 +41,17 @@ def replace_in_list(list, old, new):
             list[i] = new
     return list
 print("replace old: Ford to new: Audi: ", replace_in_list(cars_brand, 'Ford', 'Audi'))
+
+# insert_in_list function
+def insert_in_list(list, index, new):
+    list.insert(index, new)
+    return list
+print("insert new: BMW at index 1: ", insert_in_list(cars_brand, 1, 'BMW'))
+
+# delete_in_list function
+def delete_in_list(list, index):
+    del list[index]
+    return list
+print("delete index 1: ", delete_in_list(cars_brand, 1))
+
+# sort_list function
