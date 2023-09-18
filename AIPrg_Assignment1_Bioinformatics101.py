@@ -1,3 +1,4 @@
+# Question 1: Phone Words
 # Convert a PhoneWord or Vanity Number into a Number
 # Example: 1-800-HOLIDAY change to 18004654329.
 
@@ -35,6 +36,8 @@ def phoneWordToNumber(phoneWord):
     for letter in phoneWord:
         if (letter.isalpha()):
             number += numberDict[letter.lower()];
+        else:
+            number += letter;
     return number;
 
 print(phoneWordToNumber(vanityNumber));
