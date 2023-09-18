@@ -54,4 +54,20 @@ def delete_in_list(list, index):
     return list
 print("delete index 1: ", delete_in_list(cars_brand, 1))
 
-# sort_list function
+# def print_warning(msg, symbol = '*'):
+#     print_warning(symbol * (12 + len(msg)))
+
+# print_warning function
+def print_warning(msg, symbol = '*'):
+    print(symbol * (12 + len(msg)))
+    print(symbol + ' ' + msg + ' ' + symbol)
+    print(symbol * (12 + len(msg)))
+print_warning('Warning')
+
+# lambda function
+sum = lambda x, y: x + y
+print(sum(1, 2))
+
+points = [(3,5), (1,2), (4,6), (0,1)]
+sorted_points = sorted(points, key = lambda x: x[1])
+print(sorted_points)
