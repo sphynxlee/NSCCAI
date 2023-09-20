@@ -24,3 +24,24 @@ https://techvidvan.com/tutorials/artificial-intelligence-applications/
 
 https://www.foxnews.com/tech/what-ai-are-we-already-using-daily-life
 =======================================================================
+synapses
+dendrite
+perceptron
+sigmoid
+embryo
+threshold
+substitute
+
+brace
+bracket
+pseudocode
+
+terminology
+modularity
+scaffolding
+stub out any other methods you think
+backpropagation
+polymorphism
+encapsulate
+envision
+intermediate
