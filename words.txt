@@ -45,3 +45,9 @@ polymorphism
 encapsulate
 envision
 intermediate
+
+wheelie
+Anchors away!
+tinted
+windshield
+engine displacement
