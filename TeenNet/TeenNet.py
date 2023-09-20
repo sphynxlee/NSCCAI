@@ -1,7 +1,7 @@
 import numpy as np
 
 # create a class named TeenNet
-class TeeNet:
+class TeenNet:
     # create a constructor
     def __init__(self, input_nodes_num, hidden_nodes_num, output_nodes_num, learning_rate, activation_function):
         # layer nodes

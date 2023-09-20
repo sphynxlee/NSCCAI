@@ -1,5 +1,6 @@
 import numpy as np
-from .TeenNet import TeenNet
+# import TeenNet class from TeenNet.py
+from TeenNet import TeenNet
 
 INPUT_NODES_NUM = 5
 HIDDEN_NODES_NUM = 5
