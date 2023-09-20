@@ -51,3 +51,24 @@ Anchors away!
 tinted
 windshield
 engine displacement
+
+super().__init__(maker, brand, model, year, color)
+
+This line of code is calling the __init__ method of the superclass (or parent class) in a Python class inheritance hierarchy.
+
+Let's break it down step by step:
+
+super():
+
+super is a built-in Python function that returns a temporary object of the superclass.
+By calling super(), we are creating an instance of the superclass that we can then use to access its methods and attributes.
+__init__:
+
+__init__ is a special method in Python that gets executed when an object is created from a class.
+It is commonly used to initialize the attributes of an object.
+super().__init__(maker, brand, model, year, color):
+
+This line is calling the __init__ method of the superclass using the super() object.
+The arguments maker, brand, model, year, color are being passed to the __init__ method of the superclass.
+This line is used to initialize the attributes of the superclass with the values provided.
+In summary, the code is calling the __init__ method of the superclass and passing certain arguments to initialize the attributes of the superclass. This helps in ensuring that the necessary attributes of the superclass are properly initialized before any additional logic or functionality is executed in the subclass.

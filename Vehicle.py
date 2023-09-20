@@ -12,8 +12,8 @@ class Vehicle:
     def engine_stop(self):
         self.engine_status = False
 
-myCar = Vehicle("Toyota", "Corolla", "LE", 2019, "White")
-print(myCar.maker)
+# myCar = Vehicle("Toyota", "Corolla", "LE", 2019, "White")
+# print(myCar.maker)
 
 # create a new class called Car that inherits from Vehicle
 class Car(Vehicle):
