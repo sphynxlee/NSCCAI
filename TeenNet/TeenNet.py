@@ -21,8 +21,13 @@ class TeenNet:
     # create a training_pass method
 
     # create a forward_pass method
-    def forward_pass(self, input_value):
+    def forward_pass(self, input_array):
+        # print("input_value", input_value)
+        # print("input_value: ", np.shape(input_value))
+        # print("self.weights_input_hidden", self.weights_input_hidden)
+        # print("weights_input_hidden: ", np.shape(self.weights_input_hidden))
         # create a variable named hidden
+        input_value = np.array(input_array, ndmin=2).T
         hidden_input_value = np.dot(self.weights_input_hidden, input_value)
         hidden_output_value = self.activation_function(hidden_input_value)
         final_input_value = np.dot(self.weights_hidden_output, hidden_output_value)
