@@ -3,11 +3,6 @@ import scipy.special
 
 import os
 pwd = os.getcwd()
-pwd_mnist_train_small = pwd + '/NSCCAI/TeenNet_Snippets_And_First_Iteration/mnist_train_small.csv'
-print('pwd_mnist_train_small is: ', pwd_mnist_train_small)
-
-pwd_mnist_test = pwd + '/NSCCAI/TeenNet_Snippets_And_First_Iteration/mnist_test.csv'
-print('pwd_mnist_test is: ', pwd_mnist_test)
 
 class TeenNet:
 
@@ -77,6 +72,8 @@ LEARNING_RATE = 0.15
 
 tNet = TeenNet(NUM_INPUT_NODES,NUM_HIDDEN_NODES,NUM_OUTPUT_NODES,LEARNING_RATE)
 
+pwd_mnist_train_small = pwd + '/NSCCAI/TeenNet_Snippets_And_First_Iteration/mnist_train_small.csv'
+print('pwd_mnist_train_small is: ', pwd_mnist_train_small)
 training_data_file = open(pwd_mnist_train_small,'r')
 training_data_list = training_data_file.readlines()
 training_data_file.close()
@@ -106,6 +103,8 @@ for epoch in range(NUM_EPOCHS):
 ##############################################
 
 # to check results, we want to load up the training data and get it into a list
+pwd_mnist_test = pwd + '/NSCCAI/TeenNet_Snippets_And_First_Iteration/mnist_test.csv'
+print('pwd_mnist_test is: ', pwd_mnist_test)
 test_data_file = open(pwd_mnist_test,'r')
 test_data_list = test_data_file.readlines()
 test_data_file.close()
