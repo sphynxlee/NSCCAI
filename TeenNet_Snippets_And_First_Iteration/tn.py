@@ -12,13 +12,13 @@ class TeenNet:
 
     self.learning_rate = learning_rate
     self.activation_function = lambda x: scipy.special.expit(x)
-  
+
     # [TODO:explain  in more detail]
     #self.first_weights = numpy.random.normal(0.0,pow(self.num_hidden_nodes,-0.5),(self.num_hidden_nodes,self.num_input_nodes))
     #self.second_weights = numpy.random.normal(0.0,pow(self.num_output_nodes,-0.5),(self.num_output_nodes,self.num_hidden_nodes))
     self.first_weights = numpy.random.rand(self.num_hidden_nodes,self.num_input_nodes) - 0.5
     self.second_weights = numpy.random.rand(self.num_output_nodes,self.num_hidden_nodes) - 0.5
-  
+
   def train(self,inputs_list,targets_list):
     # [TODO:explain in more detail]
     inputs  = numpy.array(inputs_list,ndmin=2).T
@@ -39,7 +39,7 @@ class TeenNet:
     # use output errors to update weights between hidden layer and output layer
     self.second_weights += self.learning_rate * numpy.matmul((output_errors * final_out  * (1.0-final_out)),numpy.transpose(hidden_out))
 
-    
+
     # backprop errors from output_errors to hidden_errors
     hidden_errors = numpy.matmul(self.second_weights.T,output_errors)
     # use hidden errors to update weights between input layer and hidden layer
@@ -52,7 +52,7 @@ class TeenNet:
 
     hidden_inputs = numpy.matmul(self.first_weights,inputs)
     hidden_outputs = self.activation_function(hidden_inputs)
-    
+
     final_inputs = numpy.matmul(self.second_weights,hidden_outputs)
     final_outputs = self.activation_function(final_inputs)
     return(final_outputs)
@@ -90,7 +90,7 @@ for epoch in range(NUM_EPOCHS):
     # that represents the actual digit - there we want close-to-one
     targets = numpy.zeros(NUM_OUTPUT_NODES) + 0.01
     targets[int(all_values[0])] = 0.99
-    
+
     # go ahead and pass in the inputs and expected output to TeenNet to train
     tNet.train(inputs,targets)
 

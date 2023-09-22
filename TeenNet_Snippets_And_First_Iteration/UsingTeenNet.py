@@ -1,6 +1,9 @@
 #########################
 # Actually Using TeenNet
 ########################
+import numpy
+from tn import TeenNet
+
 NUM_INPUT_NODES  = 28*28
 NUM_HIDDEN_NODES = 200
 NUM_OUTPUT_NODES = 10
@@ -29,6 +32,6 @@ for epoch in range(NUM_EPOCHS):
     # that represents the actual digit - there we want close-to-one
     targets = numpy.zeros(NUM_OUTPUT_NODES) + 0.01
     targets[int(all_values[0])] = 0.99
-    
+
     # go ahead and pass in the inputs and expected output to TeenNet to train
     tNet.train(inputs,targets)
