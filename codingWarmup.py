@@ -54,24 +54,40 @@ def delete_in_list(list, index):
     return list
 print("delete index 1: ", delete_in_list(cars_brand, 1))
 
-# def print_warning(msg, symbol = '*'):
-#     print_warning(symbol * (12 + len(msg)))
 
-# print_warning function
+
+# def print_warning function
 def print_warning(msg, symbol = '*'):
     print(symbol * (12 + len(msg)))
     print(symbol + ' ' + msg + ' ' + symbol)
     print(symbol * (12 + len(msg)))
+
 print_warning('Warning')
+
+
 
 # lambda function
 sum = lambda x, y: x + y
 print(sum(1, 2))
 
-points = [(3,5), (1,2), (4,6), (0,1)]
+points = [(3,5), (1,2), (4,1), (0,6)]
 sorted_points = sorted(points, key = lambda x: x[1])
 print(sorted_points)
+# [(4, 1), (1, 2), (3, 5), (0, 6)]
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
 print(even_numbers)
+
+
+
+# print_flat function: takes 2-dimensional list and returns a 1-dimensional list
+def print_flat(matrix_2d):
+    matrix_flat = []
+    for row in matrix_2d:
+        for element in row:
+            matrix_flat.append(element)
+    return matrix_flat
+
+A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print("print_flat function: ", print_flat(A))
