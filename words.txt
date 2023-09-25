@@ -51,6 +51,10 @@ Anchors away!
 tinted
 windshield
 engine displacement
+stochastic
+
+minist digits
+numpy matmul vs dot
 
 super().__init__(maker, brand, model, year, color)
 
