@@ -123,3 +123,32 @@ def matrix_addition(matrix1, matrix2):
     return result
 
 print("matrix_addition function: ", matrix_addition(A, B))
+
+# vector dot product
+def vector_dot_product(vector1, vector2):
+    if len(vector1) != len(vector2):
+        return None
+    result = 0
+    for i in range(len(vector1)):
+        result += vector1[i] * vector2[i]
+    return result
+
+vector1 = [1, 2, 3]
+vector2 = [4, 5, 6]
+print("vector_dot_product function: ", vector_dot_product(vector1, vector2))
+
+# matrix multiplication
+def matrix_multiplication(matrix1, matrix2):
+    if len(matrix1[0]) != len(matrix2):
+        return None
+    result = []
+    for i in range(len(matrix1)):
+        row = []
+        for j in range(len(matrix2[0])):
+            row.append(vector_dot_product(matrix1[i], [row[j] for row in matrix2]))
+        result.append(row)
+    return result
+
+A = [[1, 2, 3], [4, 5, 6]]
+B = [[1, 2], [3, 4], [5, 6]]
+print("matrix_multiplication function: ", matrix_multiplication(A, B))
