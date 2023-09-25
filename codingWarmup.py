@@ -91,3 +91,35 @@ def print_flat(matrix_2d):
 
 A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print("print_flat function: ", print_flat(A))
+
+#  detect a matrix is a square matrix
+def is_square_matrix(matrix):
+    for row in matrix:
+        if len(row) != len(matrix) and not isinstance(row, list):
+            return False
+    return True
+
+A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print("is_square_matrix function: ", is_square_matrix(A))
+
+
+# Matrix addition
+"""
+A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+B = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+C = [[2, 4, 6], [8, 10, 12], [14, 16, 18]]
+"""
+A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+B = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+def matrix_addition(matrix1, matrix2):
+    if len(matrix1) != len(matrix2) or len(matrix1[0]) != len(matrix2[0]):
+        return None
+    result = []
+    for i in range(len(matrix1)):
+        row = []
+        for j in range(len(matrix1[0])):
+            row.append(matrix1[i][j] + matrix2[i][j])
+        result.append(row)
+    return result
+
+print("matrix_addition function: ", matrix_addition(A, B))
