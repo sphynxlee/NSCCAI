@@ -1,17 +1,17 @@
 import random
 
 class MachineLearningModel:
-    def __init__(self, name, type):
+    def __init__(self: "MachineLearningModel", name: str, type: str) -> None:
         self.name = name
         self.type = type
         self.is_trained = False
 
-    def train(self):
+    def train(self: "MachineLearningModel") -> None:
         # Simulate training the model by setting is_trained to True
         self.is_trained = True
         print(f"{self.name} {self.type} model has been trained.")
 
-    def predict(self, input_data):
+    def predict(self: "MachineLearningModel", input_data: list) -> str:
         # Simulate making predictions with the model
         if not self.is_trained:
             return "Error: Model has not been trained yet."
