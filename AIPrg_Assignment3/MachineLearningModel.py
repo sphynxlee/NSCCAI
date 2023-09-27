@@ -6,9 +6,9 @@ class MachineLearningModel:
         self.type = type
         self.is_trained = False
 
-    def train(self: "MachineLearningModel") -> None:
+    def train(self: "MachineLearningModel", is_trained: bool) -> None:
         # Simulate training the model by setting is_trained to True
-        self.is_trained = True
+        self.is_trained = is_trained
         print(f"{self.name} {self.type} model has been trained.")
 
     def predict(self: "MachineLearningModel", input_data: list) -> str:
@@ -24,7 +24,8 @@ class MachineLearningModel:
 model_instance = MachineLearningModel("MyModel", "Neural Network")
 
 # Demonstrate training the model
-model_instance.train()
+is_trained = random.choice([True, False])
+model_instance.train(is_trained)
 
 # Demonstrate making predictions
 input_data = [1, 2, 3]
