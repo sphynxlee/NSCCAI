@@ -30,7 +30,7 @@ numberDict = {
     'y': '9',
     'z': '9',
 };
-vanityNumber = '1-800-HOLIDAY';
+# vanityNumber = '1-800-HOLIDAY';
 def phoneWordToNumber(phoneWord):
     number = '';
     for letter in phoneWord:
@@ -39,5 +39,8 @@ def phoneWordToNumber(phoneWord):
         else:
             number += letter;
     return number;
+
+vanityNumber = input("Please enter a vanity number, for example, 1-800-HOLIDAY: ")
+
 
 print(phoneWordToNumber(vanityNumber));

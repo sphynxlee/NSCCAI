@@ -71,7 +71,10 @@ def convertCodonToAminoAcid(codonSequence):
 
     return aminoAcidSequence
 
-codon = convertDnaToCodon('GCTCGTAATGATTGT');
-print(codon);
+# codon = convertDnaToCodon('GCTCGTAATGATTGT');
+
+dnaSequence = input("Please enter a DNA sequence, for example, GCTCGTAATGATTGT:");
+codon = convertDnaToCodon(dnaSequence);
+print("Codon Sequence: ", codon);
 aminoAcid = convertCodonToAminoAcid(codon);
-print(aminoAcid);
+print("Amino Acid Sequence: ", aminoAcid);
