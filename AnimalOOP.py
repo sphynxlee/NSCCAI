@@ -1,6 +1,4 @@
 import sys
-from typing import Any
-
 
 class Animal:
     def __init__(self: "Animal", name: str, color: str, noise: bool = False) -> None:
@@ -30,8 +28,6 @@ class Animal:
     # size of Animal instance
     def __sizeof__(self: "Animal") -> int:
         return sys.getsizeof(self.name) + sys.getsizeof(self.color) + sys.getsizeof(self.noise)
-
-
 
 dog = Animal("Dog", "Brown")
 dog.make_noise(True)
