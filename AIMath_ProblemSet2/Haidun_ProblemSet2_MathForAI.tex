@@ -1,0 +1,553 @@
+\documentclass[a4paper,12pt]{article} % Set paper size and document type
+\usepackage{amsmath,eqparbox}
+
+% Change margins - default margins are too broad
+\usepackage[margin=10mm]{geometry}
+
+% Set document title and author
+\title{ProblemSet2 Math For AI}
+\author{Haidun LI}
+\date{2023-09-29} % If date is left blank, it will be hidden
+
+\begin{document}
+\noindent
+Hello world! $2^2 = \sqrt{16}$
+
+\noindent
+\textbf{1.Translate the following system of 3 equations and 3 unknowns into an augmented matrix format and solve for the unknowns} \\
+
+\vspace{2mm}
+
+\begin{align*}
+\begin{cases}
+ 	x + y + z & =  6 \\
+	2x - y + z & = -3 \\
+	3y - 2z & = 0 \\
+\end{cases}
+\end{align*}
+
+convert this linear algebra equation to a matrix: using Gaussian elimination
+\[
+\begin{bmatrix}
+    1 & 1 & 1 & | & 6 \\
+    2 & -1 & 1 & | & -3 \\
+    0 & 3 & -2 & | & 0 \\
+\end{bmatrix}
+\]
+
+R2 = -2R1 + R2:
+\[
+\begin{bmatrix}
+    1 & 1 & 1 & | & 6 \\
+    0 & -3 & -1 & | & -15 \\
+    0 & 3 & -2 & | & 0 \\
+\end{bmatrix}
+\]
+
+R3 = R3 + R2
+\[
+\begin{bmatrix}
+    1 & 1 & 1 & | & 6 \\
+    0 & -3 & -1 & | & -15 \\
+    0 & 0 & -3 & | & -15 \\
+\end{bmatrix}
+\] \\
+
+Now, we have solve z parameter, which value is: \\
+\begin{center}
+    -3z = -15 \\  z =5
+\end{center}
+
+Then, the linear algebra equation will be like:
+
+\begin{align*}
+\begin{cases}
+ 	x + y + 5 & =  6 \\
+	- 3y - 5 & = -15 \\
+\end{cases}
+\end{align*}
+
+So, the y parameter value is: \\
+\begin{center}
+    -3y -5 = -15 \\ -3y = -10 \\ y = $\frac{10}{3}$
+\end{center}
+
+And then, we could use parameter y, z to solve x:
+\begin{center}
+x+$\frac{10}{3}$ +5 = 6 \\
+x = -$\frac{7}{3}$
+\end{center}
+
+As a result,  the solution to the system of equations is:
+\begin{center}
+x = -$\frac{7}{3}$, y = $\frac{10}{3}$, z=5
+\end{center}
+
+\vspace{2mm}
+
+
+
+\noindent
+\textbf{2. Identify which, if any, of the following 2x2 matrices are singular} \\
+\\2.1: \\
+\begin{align*}
+\begin{pmatrix}
+    2 & 6 \\
+    3 & -2 \\
+\end{pmatrix}
+\end{align*}
+This determinant of this matrix is: \textbf{NOT} singular
+\begin{align*}
+\text{det}(A) &= (2 \cdot (-2)) - (6 \cdot 3) \\
+&= (-4) - (18) \\
+&= -22 \\
+-22 &\neq 0
+\end{align*}
+\\
+2.2: \\
+\begin{align*}
+\begin{pmatrix}
+    1 & 11 \\
+    3 & 40 \\
+\end{pmatrix}
+\end{align*}
+This determinant of this matrix is: \textbf{NOT} singular
+\begin{align*}
+\text{det}(A) &= (1 \cdot (40)) - (11 \cdot 3) \\
+&= 40 - 33 \\
+&= 7 \\
+7 &\neq 0
+\end{align*}
+\\
+2.3: \\
+\begin{align*}
+\begin{pmatrix}
+    22 & 11 \\
+    8 & 4 \\
+\end{pmatrix}
+\end{align*}
+This determinant of this matrix is: \textbf{singular}
+\begin{align*}
+\text{det}(A) &= (22 \cdot (4)) - (8 \cdot 11) \\
+&= 88 - 88 \\
+&= 0 \\
+\end{align*}
+\\
+2.4: \\
+\begin{align*}
+\begin{pmatrix}
+    d^2 & d+c \\
+    d & c/d+1 \\
+\end{pmatrix}
+\end{align*}
+This determinant of this matrix is: \textbf{singular}
+\begin{align*}
+\text{det}(A) &= (d^2 \cdot (c/d+1)) - ((d+c) \cdot d) \\
+&= cd+d^2 - d^2-cd  \\
+&= 0 \\
+\end{align*}
+2.5: \\
+\begin{align*}
+\begin{pmatrix}
+    0.5 & 5 \\
+    2 & 22 \\
+\end{pmatrix}
+\end{align*}
+This determinant of this matrix is: \textbf{NOT} singular
+\begin{align*}
+\text{det}(A) &= (0.5 \cdot 22) - (5 \cdot 2) \\
+&= 11 - 10 \\
+&= 1 \\
+1 &\neq 0
+\end{align*}
+\\
+
+\noindent
+\textbf{3. Find the determinant of each of the following 3x3 matrices.} \\
+\\ 3.1: \\
+\[
+\begin{bmatrix}
+    1 & 2 & 3 \\
+    -1 & 5 & 7 \\
+    4 & 5 & 2 \\
+\end{bmatrix}
+\]
+The determinant of this matrix is:
+\begin{align*}
+\text{det}(A) &= (1 \cdot (5 \cdot 2 - 7 \cdot 5)) - (2 \cdot (-1 \cdot 2 - 7 \cdot 4)) + (3 \cdot (-1 \cdot 5 - 5 \cdot 4)) \\
+&= (1 \cdot (-25)) - (2 \cdot (-30)) + (3 \cdot (-25)) \\
+&= -25 + 60 - 75 \\
+&= -40 \\
+\end{align*}
+\\
+
+3.2: \\
+\[
+\begin{bmatrix}
+    6 & 2 & -1 \\
+    -4 & 1/5 & 0 \\
+    6 & 10 & -5 \\
+\end{bmatrix}
+\]
+The determinant of this matrix is:
+\begin{align*}
+\text{det}(A) &= (6 \cdot (1/5 \cdot (-5) - 0 \cdot 10)) - (2 \cdot (-4 \cdot (-5) - 0 \cdot 6)) + (-1 \cdot (-4 \cdot 10 - 1/5 \cdot 6)) \\
+&= (6 \cdot (-1)) - (2 \cdot 20) + (-1 \cdot (-40)) \\
+&= -6 - 40 + 40 \\
+&= -6 \\
+\end{align*}
+\\
+
+3.3: \\
+\[
+\begin{bmatrix}
+    3 & -1 & 2 \\
+    5 & 1 & 0 \\
+    -2 & 3 & 4 \\
+\end{bmatrix}
+\]
+The determinant of this matrix is:
+\begin{align*}
+\text{det}(A) &= (3 \cdot (1 \cdot 4 - 0 \cdot 3)) - (-1 \cdot (5 \cdot 4 - 0 \cdot (-2))) + (2 \cdot (5 \cdot 3 - 1 \cdot (-2))) \\
+&= (3 \cdot 4) - (-1 \cdot 22) + (2 \cdot 17) \\
+&= 12 + 22 + 34 \\
+&= 68 \\
+\end{align*}
+\\
+
+\noindent
+\textbf{4. Find the inverse of the following 3x3 matrices. You can use any method you like, but it would be good practice to try 2 different methods.} \\
+\\ 4.1: \\
+\[
+\begin{bmatrix}
+    2 & 0 & -1 \\
+    5 & 1 & 0 \\
+    0 & 1 & 3 \\
+\end{bmatrix}
+\] \\
+\\
+The process of finding the inverse of this matrix is to find the determinant of this matrix first: \\
+\begin{align*}
+\text{det}(A) &= (2 \cdot (1 \cdot 3 - 0 \cdot 1)) - (0 \cdot (5 \cdot 3 - 0 \cdot 0)) + (-1 \cdot (5 \cdot 1 - 1 \cdot 0)) \\
+&= (2 \cdot 3) - (0 \cdot 15) + (-1 \cdot 5) \\
+&= 6 - 5 \\
+&= 1 \\
+\end{align*}
+\noindent
+Transpose of this matrix is: \\
+\[
+\begin{bmatrix}
+    2 & 5 & 0 \\
+    0 & 1 & 1 \\
+    -1 & 0 & 3 \\
+\end{bmatrix}
+\]
+\\
+\noindent
+The Matrix R1C1 is:
+\[
+\begin{pmatrix}
+    1 & 1 \\
+    0 & 3 \\
+\end{pmatrix}
+\]
+And the value of this matrix is: 3 \\\\
+\\
+\noindent
+The Matrix R1C2 is:
+\[
+\begin{pmatrix}
+    0 & 1 \\
+    -1 & 3 \\
+\end{pmatrix}
+\]
+And the value of this matrix is: 1 \\\\
+\noindent
+The Matrix R1C3 is:
+\[
+\begin{pmatrix}
+    0 & 1 \\
+    1 & 0 \\
+\end{pmatrix}
+\]
+And the value of this matrix is: -1 \\\\
+
+\noindent
+The Matrix R2C1 is:
+\[
+\begin{pmatrix}
+    5 & 0 \\
+    0 & 3 \\
+\end{pmatrix}
+\]
+And the value of this matrix is: 15 \\\\
+
+\noindent
+The Matrix R2C2 is:
+\[
+\begin{pmatrix}
+    2 & 0 \\
+    -1 & 3 \\
+\end{pmatrix}
+\]
+And the value of this matrix is: 6 \\\\
+
+\noindent
+The Matrix R2C3 is:
+\[
+\begin{pmatrix}
+    2 & 5 \\
+    -1 & 0 \\
+\end{pmatrix}
+\]
+And the value of this matrix is: -5 \\\\
+
+\noindent
+The Matrix R3C1 is:
+\[
+\begin{pmatrix}
+    5 & 0 \\
+    1 & 1 \\
+\end{pmatrix}
+\]
+And the value of this matrix is: 5 \\\\
+
+\noindent
+The Matrix R3C2 is:
+\[
+\begin{pmatrix}
+    2 & 0 \\
+    0 & 1 \\
+\end{pmatrix}
+\]
+And the value of this matrix is: 2 \\\\
+
+\noindent
+The Matrix R3C3 is:
+\[
+\begin{pmatrix}
+    2 & 5 \\
+    0 & 1 \\
+\end{pmatrix}
+\]
+And the value of this matrix is: 2 \\\\
+
+\noindent
+Collect all of these value together, we could get the temporary matrix: \\
+\[
+\begin{bmatrix}
+    3 & 1 & -1 \\
+    15 & 6 & -5 \\
+    5 & 2 & 2 \\
+\end{bmatrix}
+\]
+\\
+\noindent
+adjoint matrix: change the temporary matrix each value's symbol: \\
+\[
+\begin{bmatrix}
+    3 & -1 & 1 \\
+    -15 & 6 & 5 \\
+    5 & -2 & 2 \\
+\end{bmatrix}
+\]
+Using adjoint matrix divide the determinant of this matrix: \\
+And the inverse of this matrix is: \\
+\[
+\begin{bmatrix}
+    3 & -1 & 1 \\
+    -15 & 6 & 5 \\
+    5 & -2 & 2 \\
+\end{bmatrix}
+\]
+\\
+
+
+
+\noindent
+\\Using Gaussian elimination to find the inverse of this matrix: \\
+\[
+\begin{bmatrix}
+    2 & 0 & -1 & | & 1 & 0 & 0 \\
+    5 & 1 & 0 & | & 0 & 1 & 0 \\
+    0 & 1 & 3 & | & 0 & 0 & 1 \\
+\end{bmatrix}
+\]
+\\
+R1 = R1/2
+\[
+\begin{bmatrix}
+    1 & 0 & -1/2 & | & 1/2 & 0 & 0 \\
+    5 & 1 & 0 & | & 0 & 1 & 0 \\
+    0 & 1 & 3 & | & 0 & 0 & 1 \\
+\end{bmatrix}
+\]
+\\
+R1 = 5R1
+\[
+\begin{bmatrix}
+    5 & 0 & -5/2 & | & 5/2 & 0 & 0 \\
+    5 & 1 & 0 & | & 0 & 1 & 0 \\
+    0 & 1 & 3 & | & 0 & 0 & 1 \\
+\end{bmatrix}
+\]
+\\
+R2 = R2 - R1
+\[
+\begin{bmatrix}
+    5 & 0 & -5/2 & | & 5/2 & 0 & 0 \\
+    0 & 1 & 5/2 & | & -5/2 & 1 & 0 \\
+    0 & 1 & 3 & | & 0 & 0 & 1 \\
+\end{bmatrix}
+\]
+\\
+R1 = R1/5
+\[
+\begin{bmatrix}
+    1 & 0 & -1/2 & | & 1/2 & 0 & 0 \\
+    0 & 1 & 5/2 & | & -5/2 & 1 & 0 \\
+    0 & 1 & 3 & | & 0 & 0 & 1 \\
+\end{bmatrix}
+\]
+\\
+R3 = R3 - R2
+\[
+\begin{bmatrix}
+    1 & 0 & -1/2 & | & 1/2 & 0 & 0 \\
+    0 & 1 & 5/2 & | & -5/2 & 1 & 0 \\
+    0 & 0 & 1/2 & | & 5/2 & -1 & 1 \\
+\end{bmatrix}
+\]
+\\
+R3 = 2R3
+\[
+\begin{bmatrix}
+    1 & 0 & -1/2 & | & 1/2 & 0 & 0 \\
+    0 & 1 & 5/2 & | & -5/2 & 1 & 0 \\
+    0 & 0 & 1 & | & 5 & -2 & 2 \\
+\end{bmatrix}
+\]
+\\
+R3 = R3 * -1/2
+\[
+\begin{bmatrix}
+    1 & 0 & -1/2 & | & 1/2 & 0 & 0 \\
+    0 & 1 & 5/2 & | & -5/2 & 1 & 0 \\
+    0 & 0 & -1/2 & | & -5/2 & 1 & -1 \\
+\end{bmatrix}
+\]
+\\
+R1 = R1 - R3
+\[
+\begin{bmatrix}
+    1 & 0 & 0 & | & 3 & -1 & 1 \\
+    0 & 1 & 5/2 & | & -5/2 & 1 & 0 \\
+    0 & 0 & -1/2 & | & -5/2 & 1 & -1 \\
+\end{bmatrix}
+\]
+\\
+R3 = R3 * -5
+\[
+\begin{bmatrix}
+    1 & 0 & 0 & | & 3 & -1 & 1 \\
+    0 & 1 & 5/2 & | & -5/2 & 1 & 0 \\
+    0 & 0 & 5/2 & | & 25/2 & -5 & 5 \\
+\end{bmatrix}
+\]
+\\
+R2 = R2 - R3
+\[
+\begin{bmatrix}
+    1 & 0 & 0 & | & 3 & -1 & 1 \\
+    0 & 1 & 0 & | & -15 & 6 & -5 \\
+    0 & 0 & 5/2 & | & 25/2 & -5 & 5 \\
+\end{bmatrix}
+\]
+\\
+R3 = R3 * 2/5
+\[
+\begin{bmatrix}
+    1 & 0 & 0 & | & 3 & -1 & 1 \\
+    0 & 1 & 0 & | & -15 & 6 & -5 \\
+    0 & 0 & 1 & | & 5 & -2 & 2 \\
+\end{bmatrix}
+\]
+\\
+As a result, the inverse of this matrix is: \\
+\[
+\begin{bmatrix}
+    3 & -1 & 1 \\
+    -15 & 6 & -5 \\
+    5 & -2 & 2 \\
+\end{bmatrix}
+\]
+\\
+
+\noindent
+4.2: \\
+\[
+\begin{bmatrix}
+    3 & -1 & 2 \\
+    5 & 1 & 0 \\
+    -2 & 3 & 4 \\
+\end{bmatrix}
+\] \\
+\\
+The inverse of this matrix is: \\
+\[
+\begin{bmatrix}
+    2/33 & 5/33 & -1/33 \\
+    -10/33 & 8/33 & 5/33 \\
+    17/66 & -7/66 & 4/33 \\
+\end{bmatrix}
+\]
+\\
+
+
+\noindent
+\textbf{5. Write down the transpose of each of the following matrices.} \\
+5.1: \\
+\[
+\begin{bmatrix}
+    5 & -55 & 6 & 5 \\
+    12 & 1/2 & -7 & 22 \\
+\end{bmatrix}
+\]
+The transpose of this matrix is: \\
+\[
+\begin{bmatrix}
+    5 & 12 \\
+    -55 & 1/2 \\
+    6 & -7 \\
+    5 & 22 \\
+\end{bmatrix}
+\]
+\\
+5.2: \\
+\[
+\begin{bmatrix}
+    1 & 2 & 3 & 4 \\
+    0 & 2 & 4 & 9 \\
+    12 & 20 & -1 & 11 \\
+    -2 & -15 & 0 & 13 \\
+\end{bmatrix}
+\]
+The transpose of this matrix is: \\
+\[
+\begin{bmatrix}
+    1 & 0 & 12 & -2 \\
+    2 & 2 & 20 & -15 \\
+    3 & 4 & -1 & 0 \\
+    4 & 9 & 11 & 13 \\
+\end{bmatrix}
+\]
+\\
+
+
+
+
+
+
+
+
+\end{document}
