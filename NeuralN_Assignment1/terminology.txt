@@ -1,0 +1,52 @@
+1. Data Mining:
+Data mining is a process of discovering patterns, trends, correlations, or useful information within large volumes of datasets. Companies use this knowledge to solve problems, analyze the future impact of business decisions, and increase their profit margins.
+ref:
+https://aws.amazon.com/what-is/data-mining/?nc1=h_ls
+
+2. Recurrent neural network (RNN):
+Recurrent neural network is a type of neural network used to deal specifically with sequential data. Actually what makes RNN so powerful is the fact that it doesn't take into consideration just the actual input but also the previous input which allows it to memorize what happens previously.
+ref:
+https://towardsdatascience.com/recurrent-neural-networks-rnns-3f06d7653a85
+https://www.ibm.com/topics/recurrent-neural-networks
+
+3. Long Short-Term Memory (LSTM):
+Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN) architecture that is specifically designed to handle long sequences of data and address the vanishing gradient problem.
+ref:
+https://www.geeksforgeeks.org/deep-learning-introduction-to-long-short-term-memory/
+
+4. Gradient Descent:
+Gradient descent is a fundamental algorithm used in machine learning to optimize models by finding the best parameters that minimize the error or loss function.
+ref:
+https://www.ibm.com/topics/gradient-descent
+
+5. Convergence:
+Convergence refers to the process in which an iterative algorithm or sequence of values approaches a stable or fixed point as it progresses
+ref:
+https://www.linkedin.com/pulse/knowing-what-makes-ml-training-converge-deepak-kumar/
+
+6. Feature Extraction:
+Feature extraction is a process in data analysis, machine learning, and signal processing where you transform raw data into a set of relevant and informative features, which are more suitable for a particular task or analysis.
+ref:
+https://deepai.org/machine-learning-glossary-and-terms/feature-extraction
+
+7. Binary tree:
+A binary tree is a data structure in computer science consisting of nodes connected by edges or branches. Each node in a binary tree has at most two children, which are referred to as the left child and the right child.
+ref:
+https://www.geeksforgeeks.org/binary-tree-data-structure/
+
+8. Convolutional neural network (CNN):
+A Convolutional Neural Network (CNN) is a type of artificial neural network specifically designed for processing and analyzing visual data, such as images and videos. CNNs have proven to be highly effective in various computer vision tasks, including image classification, object detection, image segmentation, and more. (eg: pytorch)
+ref:
+https://www.ibm.com/topics/convolutional-neural-networks
+
+9. Incremental learning:
+Incremental learning, also known as online learning or lifelong learning, is a machine learning paradigm in which a model is continuously updated or trained on new data as it becomes available, without retraining the entire model from scratch.
+ref:
+https://www.datacamp.com/blog/what-is-incremental-learning
+
+10. Synaptic Weights:
+In the context of neural networks, synaptic weights, also known as connection weights or simply weights, are numerical values associated with the connections between neurons in the network. These weights play a crucial role in determining the strength and significance of the connections between neurons.
+ref:
+https://towardsdatascience.com/whats-the-role-of-weights-and-bias-in-a-neural-network-4cf7e9888a0f
+
+Hyperparameter Tuning
