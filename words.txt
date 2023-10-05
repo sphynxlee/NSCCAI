@@ -1,3 +1,5 @@
+psql -d postgres -h localhost -U postgres
+
 20230908:
 synapses 突触
 dendrite 枝晶
@@ -79,6 +81,24 @@ Synaptic Weights
 Hyperparameter Tuning
 
 momentum
+
+polynomial
+
+diagonal
+
+permutation
+
+perpendicular
+
+orthonormal
+orthogonal
+
+notation
+
+Pythagoras
+
+diagonalizing
+
 
 =======================================================================
 super().__init__(maker, brand, model, year, color)
