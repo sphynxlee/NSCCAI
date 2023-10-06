@@ -1,6 +1,6 @@
 import os
 pwd = os.getcwd()
-pwd = pwd + '/NSCCAI/codes/namesList.txt'
+pwd = pwd + '/NSCCAI/codes/two_name_pairing/namesList.txt'
 print(pwd)
 
 file = open(pwd, 'r')

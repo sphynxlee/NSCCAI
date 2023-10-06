@@ -1,7 +1,7 @@
 import os
 pwd = os.getcwd()
 print('pwd is: ', pwd);
-pwd = pwd + '/NSCCAI/cars.csv'
+pwd = pwd + '/NSCCAI/codes/cars.csv'
 
 # open the cars.csv file
 file = open(pwd, 'r');
