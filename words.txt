@@ -109,6 +109,17 @@ Prefabricated in the system
 
 High precision positioning
 
+palindrome  回文
+
+polymorphism    多态性
+
+Fourier 傅立叶
+
+nudge   轻推
+
+polynomial
+
+
 =======================================================================
 super().__init__(maker, brand, model, year, color)
 This line of code is calling the __init__ method of the superclass (or parent class) in a Python class inheritance hierarchy.
