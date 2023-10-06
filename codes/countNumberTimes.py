@@ -12,7 +12,7 @@ def count_number_times(lists):
                 count += 1
                 print(lists[i], count)
                 #  delete current list[j] element
-                del lists[j: j+1]
+                lists.pop(j)
 
     # print(lists)
 
