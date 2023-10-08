@@ -7,16 +7,19 @@ file = open(pwd, 'r')
 namesList = file.read().split('\n')
 # print(f'length of namesList: {len(namesList)}')
 
-isEven = True
-if len(namesList) % 2 == 0:
-    # print("The number of students is even.")
-    isEven = True
-else:
-    print("The number of students is odd.")
-    last_count = int(len(namesList) / 2)
-    # print(f'The last count {last_count}')
-    isEven = False
+isEven = (lambda x: True if len(x) % 2 == 0 else False)(namesList)
+print(f'isEven is: {isEven}')
 
+
+# print(f'The last count {last_count}')
+# if len(namesList) % 2 == 0:
+#     # print("The number of students is even.")
+#     isEven = True
+# else:
+#     # print("The number of students is odd.")
+#     isEven = False
+
+last_count = int(len(namesList) / 2)
 count = 0
 for i in range(0, len(namesList)-1, 2):
     count += 1
