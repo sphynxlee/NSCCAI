@@ -4,7 +4,7 @@
 # abcba
 
 def isPalindrome(test_str) -> bool:
-    test_str = str(test_str)
+    test_str = str(test_str).strip()
 
     if len(test_str) <= 1:
         return True
@@ -16,6 +16,8 @@ def isPalindrome(test_str) -> bool:
 
 # print(isPalindrome('abba'))
 # print(isPalindrome(1234321))
+# print(isPalindrome('1 234321'))
+
 test_str = input('Please input a string which used to test palindrome: ')
 res = isPalindrome(test_str)
 print(f'{test_str} is palindrome: {res}')
