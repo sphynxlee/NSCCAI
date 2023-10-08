@@ -2,13 +2,20 @@ psql -d postgres -h localhost -U postgres
 
 20230908:
 synapses 突触
+
 dendrite 枝晶
+
 perceptron 感知器
+
 sigmoid 乙状
+
 embryo 胚
+
 threshold 门槛
+
 substitute 代替
-nand gate
+
+nand gate   与非门
 =======================================================================
 20230911:
 Neural Network:
@@ -26,88 +33,116 @@ https://techvidvan.com/tutorials/artificial-intelligence-applications/
 
 https://www.foxnews.com/tech/what-ai-are-we-already-using-daily-life
 =======================================================================
-synapses
-dendrite
-perceptron
-sigmoid
-embryo
-threshold
-substitute
+synapses    突触
 
-brace
-bracket
-pseudocode
+dendrite    枝晶
 
-terminology
-modularity
-scaffolding
-stub out any other methods you think
-backpropagation
-polymorphism
-encapsulate
-envision
-intermediate
+perceptron  感知器
 
-wheelie
-Anchors away!
-tinted
-windshield
-engine displacement
-stochastic
+sigmoid    乙状
 
-minist digits
-numpy matmul vs dot
+embryo      胚
 
+threshold   门槛
 
-polynomial
+substitute  代替
 
-factorization
-decomposition
+brace       支撑
 
-diagonal
-pivots
+bracket     支架
 
+pseudocode  伪代码
 
-Bayesian Probability
-Data Mining
-Long Short-Term Memory (LSTM)
-Gradient Descent
-Convergence
-Feature Extraction
-binary tree
-convolutional neural network (CNN)
-incremental learning
-Synaptic Weights
-Hyperparameter Tuning
+terminology 术语
 
-momentum
+modularity  模块化
 
-polynomial
+scaffolding 脚手架
+stub out any other methods you think    桩出任何其他方法
 
-diagonal
+backpropagation 反向传播
 
-permutation
+polymorphism    多态性
 
-perpendicular
+encapsulate     封装
 
-orthonormal
-orthogonal
+envision        想象
 
-notation
+intermediate    中间的
 
-Pythagoras
+wheelie        单轮驱动
+Anchors away!   起锚！
 
-diagonalizing
+tinted          着色
+
+windshield      挡风玻璃
+
+engine displacement     发动机排量
+
+stochastic      随机的
+
+minist digits   手写数字
+
+numpy matmul vs dot     点积
+
+polynomial      多项式
+
+factorization     因式分解
+
+decomposition     分解
+
+pivots      枢轴
+
+Bayesian Probability        贝叶斯概率
+
+Data Mining     数据挖掘
+Long Short-Term Memory (LSTM)   长短期记忆
+
+Gradient Descent        梯度下降
+
+Convergence    收敛
+
+Feature Extraction      特征提取
+
+binary tree     二叉树
+
+convolutional neural network (CNN)      卷积神经网络
+
+incremental learning    增量学习
+
+Synaptic Weights        突触权重
+
+Hyperparameter Tuning   超参数调整
+
+momentum        动量
+
+polynomial      多项式
+
+diagonal        对角线
+
+permutation      排列
+
+perpendicular   垂直的
+
+orthonormal 正交法线
+
+orthogonal  正交的
+
+notation    符号
+
+Pythagoras  毕达哥拉斯
+
+diagonalizing   对角化
 
 
 https://s2js.com/altair/
 computerhistory.org
 
-High precision map
+High precision map  高精度地图
 
-Prefabricated in the system
+Prefabricated in the system 系统预制
 
-High precision positioning
+High precision positioning  高精度定位
 
 palindrome  回文
 
@@ -116,9 +151,6 @@ polymorphism    多态性
 Fourier 傅立叶
 
 nudge   轻推
-
-polynomial
-
 
 =======================================================================
 super().__init__(maker, brand, model, year, color)
