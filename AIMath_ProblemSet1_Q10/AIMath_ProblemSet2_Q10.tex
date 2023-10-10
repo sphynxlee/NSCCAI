@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+Q10\ Solve\ the\ following\ system\ of\ equations: \\
+\begin{align*}
+p - 3q &= -3 \\
+p + q &= 5 \\
+\end{align*}
+
+Use augment matrix \\
+\begin{align*}
+\begin{bmatrix}
+    1 & -3 & | & -3 \\
+    1 & 1 & | & 5
+\end{bmatrix}
+\end{align*}
+
+Use Gaussian Elimination, subtract row 1 from row 2 \\
+\begin{align*}
+\begin{bmatrix}
+    1 & -3 & | & -3 \\
+    0 & 4 & | & 8
+\end{bmatrix}
+\end{align*}
+
+Divide row 2 by 4 \\
+\begin{align*}
+\begin{bmatrix}
+    1 & -3 & | & -3 \\
+    0 & 1 & | & 2
+\end{bmatrix}
+\end{align*}
+
+Add 3 times row 2 to row 1 \\
+\begin{align*}
+\begin{bmatrix}
+    1 & 0 & | & 3 \\
+    0 & 1 & | & 2
+\end{bmatrix}
+\end{align*}
+
+Now, we have Identity matrix on the left side, and the solution on the right side. \\
+So, the solution is: \\
+\begin{align*}
+p &= 3 \\
+q &= 2
+\end{align*}
+
+
+\end{document}
+
