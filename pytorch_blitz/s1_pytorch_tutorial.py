@@ -1,6 +1,6 @@
 import torch
 import numpy as np
-'''
+
 # Directly from data
 data = [[1,2,3],[4,5,6]]
 x_data = torch.tensor(data)
@@ -44,32 +44,32 @@ if torch.cuda.is_available():
     print(f'Device tensor is stored on: {tensor.device}\n')
 else:
     print('No GPU available, using CPU instead.\n')
-'''
-'''
+
+
 # Standard numpy-like indexing and slicing
 tensor = torch.ones(2,2)
 tensor[1, 1] = 0
 print(f'tensor: {tensor}\n')
-'''
-'''
+
+
 # Joining tensors
 t1 = torch.cat([tensor, tensor, tensor], dim=1)
 print(f't1: {t1}\n')
-'''
-'''
+
+
 # Multiplying tensors
 # This computes the element-wise product
 print(f'tensor.mul(tensor): {tensor.mul(tensor)}\n')
 # Alternative syntax:
 print(f'tensor * tensor: {tensor * tensor}\n')
-'''
-'''
+
+
 # This computes the matrix multiplication between two tensors
 print(f'tensor.matmul(tensor.T): {tensor.matmul(tensor.T)}\n')
 # Alternative syntax:
 print(f'tensor @ tensor.T: {tensor @ tensor.T}\n')
-'''
-'''
+
+
 # In-place operations Operations that have a _ suffix are in-place. For example: x.copy_(y), x.t_(), will change x.
 print(f'tensor, before add 5: {tensor}\n')
 tensor.add_(5)
@@ -80,9 +80,9 @@ tensor.copy_(tensor_new)
 print(f'tensor.copy_(tensor): {tensor}\n')
 tensor_new.t_()
 print(f'tensor_new.t_(): {tensor_new}\n')
-'''
+
 # Bridge with NumPy
-'''
+
 # Tensor to NumPy array
 t = torch.ones(5)
 print(f't: {t}\n')
@@ -93,7 +93,7 @@ print(f'n: {n}\n')
 t.add_(1)
 print(f't.add_(1): {t}\n')
 print(f'n: {n}\n')
-'''
+
 # NumPy array to Tensor
 n = np.ones(5)
 print(f'n: {n}\n')
