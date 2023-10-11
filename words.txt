@@ -159,6 +159,11 @@ Euclidean distance  欧几里得距离
 constraints 约束
 
 cascade 级联
+polynomial  多项式
+
+topology    拓扑学
+
+
 
 =======================================================================
 super().__init__(maker, brand, model, year, color)
