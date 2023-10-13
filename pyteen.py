@@ -49,9 +49,11 @@ BATCH_SIZE = 32
 training_data_loader = DataLoader(training_data, batch_size=BATCH_SIZE, shuffle=True)
 testing_data_loader = DataLoader(testing_data, batch_size=BATCH_SIZE, shuffle=True)
 
-print(len(training_data))
-print(len(training_data_loader.dataset))
-print(training_data_loader.dataset[0][0].shape)
+# print(len(training_data))
+# print(training_data[0][0].shape)
+print(len(training_data_loader))
+# print(len(training_data_loader.dataset))
+# print(training_data_loader.dataset[0][0].shape)
 
 pyTeen = PyTeen()
 # training loop
@@ -65,6 +67,7 @@ for i in range(EPOCH):
         total_loss += pyTeen.train(input, label)
         k += 1
     print(f'k is: {k}\n')
-    print(f'total_loss for EPOCH {i} is: {total_loss/len(training_data_loader)}\n')
+    print(f'total_loss for EPOCH {i} is: {total_loss}\n')
+    # print(f'total_loss for EPOCH {i} is: {total_loss/len(training_data_loader)}\n')
 
 
