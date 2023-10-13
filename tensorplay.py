@@ -68,7 +68,7 @@ print(f'a.dtype: {a.dtype}\n')
 print(f'a.device: {a.device}\n')
 print(f'requires_grad: {a.requires_grad}\n')
 
-
+import torch
 # tensor slicing
 a = torch.tensor([[1,2,3],[4,5,6],[7,8,9]])
 print(f'a: {a}\n')
