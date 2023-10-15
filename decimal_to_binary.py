@@ -1,4 +1,3 @@
-
 def decimal_to_binary (number, remain_list = []):
     number = int(number)
 
@@ -7,8 +6,10 @@ def decimal_to_binary (number, remain_list = []):
 
     remain_list.append(remain)
 
-    while left > 0:
-        decimal_to_binary(left, remain_list)
-        return remain_list.reverse()
+    if left > 0:
+        return decimal_to_binary(left, remain_list)
+    else:
+        remain_list.reverse()
+        return remain_list
 
 print(decimal_to_binary(52))
