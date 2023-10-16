@@ -65,7 +65,7 @@ print(len(training_data_loader))
 pyTeen = PyTeen()
 # training loop
 # we want to call train repeatedly with the training data pairs (input, label)
-EPOCH = 1
+EPOCH = 3
 for i in range(EPOCH):
     k, total_loss = 0, 0
     for input, label in tqdm(training_data_loader):
@@ -84,6 +84,8 @@ for i in range(EPOCH):
 # print(len(testing_data_loader))
 # print(len(testing_data_loader.dataset))
 # print(testing_data_loader.dataset[0][0].shape)
+
+torch.save(pyTeen.state_dict(), 'pyTeen.pth')
 
 #  evaluation loop / testing loop
 # we want to call predict repeatedly with the testing data inputs
