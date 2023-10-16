@@ -10,6 +10,7 @@ def decimal_to_binary (number, remain_list = []):
         return decimal_to_binary(left, remain_list)
     else:
         remain_list.reverse()
-        return remain_list
+        binary_number = ''.join([str(x) for x in remain_list])
+        return binary_number
 
 print(decimal_to_binary(52))
