@@ -7,8 +7,8 @@ import pyNetwork
 import os
 pwd = os.getcwd()
 print('pwd is: ', pwd)
-# pwd = pwd + '/pyTeen.pth'
-pwd = pwd + '/pyTeen-laura.pth'
+pwd = pwd + '/pyTeen.pth'
+# pwd = pwd + '/pyTeen-laura.pth'
 
 # evaluation / testing loop
 
