@@ -163,6 +163,9 @@ polynomial  多项式
 
 topology    拓扑学
 
+Sustainability
+
+Explicit is better than implicit.
 
 
 =======================================================================
