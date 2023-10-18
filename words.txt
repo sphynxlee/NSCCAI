@@ -163,9 +163,11 @@ polynomial  多项式
 
 topology    拓扑学
 
-Sustainability
+Sustainability  可持续性
 
-Explicit is better than implicit.
+Explicit is better than implicit.   明确优于隐式。
+
+depolarization  去极化
 
 
 =======================================================================
