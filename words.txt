@@ -169,6 +169,8 @@ Explicit is better than implicit.   明确优于隐式。
 
 depolarization  去极化
 
+Qubit   量子位
+
 
 =======================================================================
 super().__init__(maker, brand, model, year, color)
