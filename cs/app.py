@@ -28,5 +28,10 @@ def show_user_profile(username, age):
 
 @app.post('/process_form')
 def echo_data():
-    the_secret = request.form.get('secret')
+    the_secret = request.form['secret']
     return the_secret
+
+@app.post('/process_img')
+def echo_img():
+    the_img = request.files['my_file']
+    return the_img.filename

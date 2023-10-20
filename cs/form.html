@@ -6,8 +6,13 @@
 
 <body>
     <h1>CS Form</h1>
-    <form action="http://127.0.0.1:5000/process_form" method="post">
+    <!-- <form action="http://127.0.0.1:5000/process_form" method="post">
         <p>secret: <input type="text" name="secret" />
+        <input type="submit" /></p>
+    </form> -->
+
+    <form action="http://127.0.0.1:5000/process_img" enctype="multipart/form-data" method="post">
+        <p><input type="file" name="my_file" />
         <input type="submit" /></p>
     </form>
 </body>
