@@ -1,4 +1,5 @@
 psql -d postgres -h localhost -U postgres
+python -m flask run
 
 20230908:
 synapses 突触
