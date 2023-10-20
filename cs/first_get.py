@@ -26,9 +26,9 @@ for country in response.json():
         # print(f'country[\'name\'][\'common\'] is {country["name"]["common"]}\n')
         # print(json.dumps(country))
         print(country.get('coatOfArms').get('png'))
-        coat_of_arms = country.get('coatOfArms').get('png')
-        coat_of_arms = country['coatOfArms']['png']
-        coa = requests.get(coat_of_arms)
+        # coat_of_arms_url = country.get('coatOfArms').get('png')
+        coat_of_arms_url = country['coatOfArms']['png']
+        coa = requests.get(coat_of_arms_url)
         bfh = open('coat_of_arms.png', 'wb')
         bfh.write(coa.content)
 
