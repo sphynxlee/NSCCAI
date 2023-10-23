@@ -34,4 +34,6 @@ def echo_data():
 @app.post('/process_img')
 def echo_img():
     the_img = request.files['my_file']
+    the_img.save(the_img.filename)
+    # the_img.save('my_file.png')
     return the_img.filename

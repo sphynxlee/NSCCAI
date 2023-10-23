@@ -34,7 +34,7 @@ class PyTeen (nn.Module):
 
     # forward is a prediction
     def forward(self, input):
-        return self.layers(input)
+        return (self.layers(input))
 
     def predict(self, input):
         with torch.no_grad():
