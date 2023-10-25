@@ -1,6 +1,9 @@
 psql -d postgres -h localhost -U postgres
 python -m flask run
 
+\i ./sakila/postgres-sakila-schema.sql
+\i ./sakila/postgres-sakila-insert-data.sql
+
 20230908:
 synapses 突触
 
