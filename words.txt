@@ -1,8 +1,8 @@
-psql -d postgres -h localhost -U postgres
 python -m flask run
 
-\i ./sakila/postgres-sakila-schema.sql
-\i ./sakila/postgres-sakila-insert-data.sql
+psql -d postgres -h localhost -U postgres
+\i ./sakila-exercises-sphynxlee/sakila/postgres-sakila-schema.sql
+\i ./sakila-exercises-sphynxlee/sakila/postgres-sakila-insert-data.sql
 
 20230908:
 synapses 突触
@@ -174,6 +174,25 @@ Explicit is better than implicit.   明确优于隐式。
 depolarization  去极化
 
 Qubit   量子位
+
+quantitative data   定量数据
+
+center spread shape 中心传播形状
+
+unimodal    单峰
+camel curve     骆驼曲线
+bimodal     双峰
+IQR: Interquartile range 四分位距
+Arithmetic Median   算术中位数
+mean   平均数
+deviation   偏差
+variance    方差
+z-score     z分数
+quartile    四分位数
+boxplot     箱线图
+corelation 相关性
+coefficient 系数
+scale   规模
 
 
 =======================================================================
