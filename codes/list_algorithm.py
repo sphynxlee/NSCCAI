@@ -44,9 +44,9 @@ def caesar_encrypt(str, n):
 
     return result
 
-res1 = caesar_encypt("dean", 2)
+res1 = caesar_encrypt("dean", 2)
 print(res1)
-res2 = caesar_encypt("DEAZ", 2)
+res2 = caesar_encrypt("DEAZ", 2)
 print(res2)
 
 def caesar_decrypt(str, n):
