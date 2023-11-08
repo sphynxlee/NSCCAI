@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 pwd = os.getcwd() + '/NSCCAI/codes/opencv_practice/'
 print(pwd)
-url = pwd + 'my_seven.jpg'
+url = pwd + 'dean-nine.png'
 
 # from pathlib import Path
 # print(Path.cwd())
@@ -17,6 +17,6 @@ img_resized = cv2.bitwise_not(img_resized)
 # cv2.waitKey(0)
 plt.imshow(img_resized, cmap='gray')
 plt.show()
-url = pwd + 'my_seven_new.jpg'
+url = pwd + 'dean-nine_new.jpg'
 cv2.imwrite(url, img_resized)
 

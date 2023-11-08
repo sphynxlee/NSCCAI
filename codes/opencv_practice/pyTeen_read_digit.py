@@ -8,7 +8,7 @@ import os
 
 pwd = os.getcwd() + '/NSCCAI/codes/opencv_practice/'
 print(pwd)
-url = pwd + 'my_seven_new.jpg'
+url = pwd + 'dean-nine_new.jpg'
 
 img = Image.open(url)
 plt.imshow(img)
