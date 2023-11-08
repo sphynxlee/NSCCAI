@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-08T04:08:49.466Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="dXQkw3l-Mj6SVm8uz6ME" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-08T04:09:12.662Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="bEy6yKfg5vBmth-l05jU" version="22.0.8" type="github">
   <diagram name="Page-1" id="3bokzZT7uCwafQ7YfKig">
-    <mxGraphModel dx="2603" dy="1649" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1793" dy="1855" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -400,8 +400,8 @@
         <mxCell id="Qpnqg18ZxqCp_iBwWqdQ-142" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Full Connect Linear&lt;br&gt;in: 84&lt;br&gt;out: 10&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="3290" y="413" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="bAEIoEkL-7gUkvATW2qR-1" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Convolutional Neural Network, MNIST Dataset Process diagram&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-45" y="-157" width="650" height="40" as="geometry" />
+        <mxCell id="bAEIoEkL-7gUkvATW2qR-1" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;Convolutional Neural Network, MNIST Dataset Process diagram&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="125" y="-192" width="830" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
