@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-08T04:17:46.022Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="VluUOhEOLZn8Y07fOSIN" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-08T04:18:05.982Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="ITfqqeGOmsAju37f0cQH" version="22.0.8" type="github">
   <diagram name="Page-1" id="3bokzZT7uCwafQ7YfKig">
-    <mxGraphModel dx="1687" dy="1794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2868" dy="2471" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -196,8 +196,8 @@
         <mxCell id="Qpnqg18ZxqCp_iBwWqdQ-69" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Output&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1893.75" y="339" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Qpnqg18ZxqCp_iBwWqdQ-70" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Output dimension: Prev width - conv width + 2 x Padding + 1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="455" y="-7" width="510" height="40" as="geometry" />
+        <mxCell id="Qpnqg18ZxqCp_iBwWqdQ-70" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Output dimension: Prev width - conv width + 2 x Padding + 1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="430" y="-7" width="560" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Qpnqg18ZxqCp_iBwWqdQ-71" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;after first conv2d, the output dimension: 28 - 5 + 2 x 2 +1 = 28&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="480" y="413" width="520" height="40" as="geometry" />
