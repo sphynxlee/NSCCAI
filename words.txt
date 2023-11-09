@@ -4,6 +4,13 @@ psql -d postgres -h localhost -U postgres
 \i ./sakila-exercises-sphynxlee/sakila/postgres-sakila-schema.sql
 \i ./sakila-exercises-sphynxlee/sakila/postgres-sakila-insert-data.sql
 
+sqlalchemy:
+pip install --upgrade pandas sqlalchemy
+pip install psycopg2-binary
+pip install ipython-sql
+
+engine = sqlalchemy.create_engine('postgresql://postgres:postgres@localhost:5432/postgres')
+
 20230908:
 synapses 突触
 
