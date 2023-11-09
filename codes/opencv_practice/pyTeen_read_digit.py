@@ -11,11 +11,11 @@ print(pwd)
 url = pwd + 'dean-nine_new.jpg'
 
 img = Image.open(url)
-plt.imshow(img)
+plt.imshow(img) # type: ignore
 plt.show()
 
 my_img_transform = transforms.Compose([transforms.Resize((28, 28)), transforms.ToTensor()])
-input_img = my_img_transform(img).unsqueeze(0)
+input_img = my_img_transform(img).unsqueeze(0) # type: ignore
 
 
 pyTeen = pyNetwork.PyTeen()

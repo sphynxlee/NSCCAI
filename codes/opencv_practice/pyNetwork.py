@@ -18,8 +18,6 @@ class PyTeen(nn.Module):
       nn.Linear(400,120),
       nn.Linear(120,84),
       nn.Linear(84,10)
-
-
     )
     self.loss = nn.CrossEntropyLoss()
     self.optimizer = optim.Adam(self.parameters())
@@ -31,7 +29,7 @@ class PyTeen(nn.Module):
   def predict(self,input):
     with torch.no_grad():
       pred = self.forward(input)
-      return(torch.argmax(pred,axis=-1))
+      return(torch.argmax(pred,axis=-1))  # type: ignore
 
   def train(self,input,label):
     self.optimizer.zero_grad()

@@ -1,0 +1,33 @@
+Input Image (1, 1, 28, 28)
+
+Layer 1: Conv2d(1, 6, 5x5, padding=2)
+Output: (1, 6, 28, 28)
+
+Layer 2: ReLU()
+Output: (1, 6, 28, 28)
+
+Layer 3: MaxPool2d(2x2, stride=2)
+Output: (1, 6, 14, 14)
+
+Layer 4: Conv2d(6, 16, 5x5, padding=0)
+Output: (1, 16, 10, 10)
+
+Layer 5: ReLU()
+Output: (1, 16, 10, 10)
+
+Layer 6: MaxPool2d(2x2, stride=2)
+Output: (1, 16, 5, 5)
+
+Layer 7: Flatten()
+Output: (1, 400)
+
+Layer 8: Linear(400, 120)
+Output: (1, 120)
+
+Layer 9: Linear(120, 84)
+Output: (1, 84)
+
+Layer 10: Linear(84, 10)
+Output: (1, 10)
+
+Predicted Label (1,)
