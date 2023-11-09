@@ -197,10 +197,15 @@ variance    方差
 z-score     z分数
 quartile    四分位数
 boxplot     箱线图
+
 corelation 相关性
 coefficient 系数
+
+corelation coefficient 相关系数
+
 scale   规模
 
+linear regression   线性回归
 
 =======================================================================
 super().__init__(maker, brand, model, year, color)
