@@ -207,6 +207,8 @@ scale   规模
 
 linear regression   线性回归
 
+aggregate function  聚合函数
+
 =======================================================================
 super().__init__(maker, brand, model, year, color)
 This line of code is calling the __init__ method of the superclass (or parent class) in a Python class inheritance hierarchy.
