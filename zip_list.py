@@ -3,7 +3,6 @@ age = [20, 30, 40, 50]
 
 zip_result = zip(names, age)
 print(type(zip_result))
-
 # [('bob', 20), ('joe', 30), ('susan', 40), ('margaret', 50)]
 print(f'listed zip_result: {list(zip_result)}')
 
