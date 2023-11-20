@@ -15,7 +15,7 @@ def sentences_alignment (sentence_lists):
 
 sentence_lists = [
     'I like apples',
-    'He love python',
+    'He likes python',
     'She is learning NLP'
 ]
 print(sentences_alignment(sentence_lists))
