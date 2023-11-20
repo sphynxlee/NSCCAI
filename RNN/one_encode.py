@@ -1,3 +1,6 @@
+# https://medium.com/@michaeldelsole/what-is-one-hot-encoding-and-how-to-do-it-f0ae272f1179
+# https://www.youtube.com/watch?v=v_4KWmkwmsU
+
 import numpy as np
 
 def one_hot_encoder(words):
