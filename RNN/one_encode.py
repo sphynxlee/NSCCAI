@@ -1,6 +1,7 @@
 import numpy as np
 
 def one_hot_encoder(words):
+    print(list(enumerate(words)))
     unique_words = list(set(words))
     encoding_map = {word: i for i, word in enumerate(unique_words)}
 
