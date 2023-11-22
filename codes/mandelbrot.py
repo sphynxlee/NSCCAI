@@ -3,16 +3,16 @@
 #     for i in range(max_iterations):
 #         z = z**2 + c
 #         if abs(z) > 2:
-#             return i  # 返回迭代次数
-#     return max_iterations  # 如果在规定次数内仍然有界，返回最大次数
+#             return i  # Returns the number of iterations
+#     return max_iterations  # If still bounded within the specified number of times, return the maximum number of times
 
 # # 举例
 # c = complex(0.355, 0.355)
 # iterations = in_mandelbrot(c)
 # if iterations == 100:
-#     print(f"{c} 属于曼德博集合")
+#     print(f"{c} Belonging to the Mandelbrot Collection")
 # else:
-#     print(f"{c} 不属于曼德博集合，迭代次数：{iterations}")
+#     print(f"{c} does not belong to the Mandelbrot set, the number of iterations：{iterations}")
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -22,8 +22,8 @@ def mandelbrot(c, max_iterations=100):
     for i in range(max_iterations):
         z = z**2 + c
         if abs(z) > 2:
-            return i  # 返回迭代次数
-    return max_iterations  # 如果在规定次数内仍然有界，返回最大次数
+            return i  # Returns the number of iterations
+    return max_iterations  # If still bounded within the specified number of times, return the maximum number of times
 
 def generate_mandelbrot(width, height, x_min, x_max, y_min, y_max):
     mandelbrot_set = np.zeros((width, height))
@@ -45,13 +45,13 @@ def plot_mandelbrot(mandelbrot_set):
     plt.ylabel('Im')
     plt.show()
 
-# 设定图像大小和坐标范围
+# Setting the image size and coordinate range
 width, height = 800, 800
 x_min, x_max = -2, 2
 y_min, y_max = -2, 2
 
-# 生成曼德博集合数据
+# Generating Mandelbrot Collection Data
 mandelbrot_set = generate_mandelbrot(width, height, x_min, x_max, y_min, y_max)
 
-# 绘制曼德博集合图形
+# plot the Mandelbrot set
 plot_mandelbrot(mandelbrot_set)
