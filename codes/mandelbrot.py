@@ -6,7 +6,7 @@
 #             return i  # Returns the number of iterations
 #     return max_iterations  # If still bounded within the specified number of times, return the maximum number of times
 
-# # 举例
+# # Examples:
 # c = complex(0.355, 0.355)
 # iterations = in_mandelbrot(c)
 # if iterations == 100:
