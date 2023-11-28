@@ -46,7 +46,7 @@ def plot_mandelbrot(mandelbrot_set):
     plt.show()
 
 # Setting the image size and coordinate range
-width, height = 800, 800
+width, height = 1000, 1000
 x_min, x_max = -2, 2
 y_min, y_max = -2, 2
 
