@@ -1,6 +1,6 @@
 import os
 pwd = os.getcwd()
-print('pwd is: ', pwd);
+print('pwd is: ', pwd, '\n');
 pwd = pwd + '/NSCCAI/codes/cars.csv'
 
 # open the cars.csv file
