@@ -1,3 +1,6 @@
+import numpy
+from tn import tNet
+
 ##############################################
 # Check quality of results
 ##############################################
