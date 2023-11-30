@@ -11,6 +11,10 @@ pip install ipython-sql
 
 engine = sqlalchemy.create_engine('postgresql://postgres:postgres@localhost:5432/postgres')
 
+MongoDB
+kaitonri
+MacdlHdukwnt4H9H
+
 20230908:
 synapses 突触
 
