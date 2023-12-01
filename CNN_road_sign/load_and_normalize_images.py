@@ -1,3 +1,7 @@
+# https://stackoverflow.com/questions/53754662/mnist-dataset-structure
+# I take the above link as a reference to create the following code.
+# It is used to load and normalize images in the same way as the MNIST dataset.
+
 import os
 import pickle
 import numpy as np
