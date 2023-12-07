@@ -213,6 +213,27 @@ linear regression   线性回归
 
 aggregate function  聚合函数
 
+mean, median, mode, variance, standard deviation (65, 95,99),z-scores and those tables
+平均值、中位数、模式、方差、标准偏差 (65、95、99)、z-分数和这些表格
+
+bayes and  central limit theorem (CLT)
+贝叶斯和 CLT
+
+what is a derivative. what is an integral. be able to take derivatve of polynomials
+能够求多项式的导数
+
+recall first and second derviatives meaning/intepretaion
+回忆一阶和二阶导数的含义/积分
+
+idea of a partial derviatve
+部分求导的概念
+
+rules of diff: chain, prod, quotient
+导数规则：链、原、商
+
+quick mention of gradient
+快速提及梯度
+
 =======================================================================
 super().__init__(maker, brand, model, year, color)
 This line of code is calling the __init__ method of the superclass (or parent class) in a Python class inheritance hierarchy.
