@@ -262,4 +262,17 @@ https://en.wikipedia.org/wiki/Roy_Fielding
 https://en.wikipedia.org/wiki/REST
 
 =======================================================================
+types-of-machine-learning
 https://www.javatpoint.com/types-of-machine-learning
+=======================================================================
+CHIP-8:
+rom:
+https://github.com/corax89/chip8-test-rom
+
+environment:
+https://github.com/craigthomas/Chip8Python
+
+I need copy the rom to the environment folder, and run the command:
+python yac8e.py .\opcode.ch8
+=======================================================================
+
