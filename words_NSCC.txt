@@ -219,13 +219,13 @@ mean, median, mode, variance, standard deviation (65, 95,99),z-scores and those 
 bayes and  central limit theorem (CLT)
 贝叶斯和 CLT
 
-what is a derivative. what is an integral. be able to take derivatve of polynomials
+what is a derivative. what is an integral. be able to take derivate of polynomials
 能够求多项式的导数
 
-recall first and second derviatives meaning/intepretaion
+recall first and second derivatives meaning/interpretation
 回忆一阶和二阶导数的含义/积分
 
-idea of a partial derviatve
+idea of a partial derivate  部分导数的概念
 部分求导的概念
 
 rules of diff: chain, prod, quotient
