@@ -260,3 +260,6 @@ To complete my application, I will send a copy of my resume in PDF format to inf
 
 https://en.wikipedia.org/wiki/Roy_Fielding
 https://en.wikipedia.org/wiki/REST
+
+=======================================================================
+https://www.javatpoint.com/types-of-machine-learning
