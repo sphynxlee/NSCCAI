@@ -1,4 +1,4 @@
-import numpy
+import numpy as np
 import scipy.special
 
 import os
@@ -15,46 +15,46 @@ class TeenNet:
     self.activation_function = lambda x: scipy.special.expit(x)
 
     # [TODO:explain  in more detail]
-    #self.first_weights = numpy.random.normal(0.0,pow(self.num_hidden_nodes,-0.5),(self.num_hidden_nodes,self.num_input_nodes))
-    #self.second_weights = numpy.random.normal(0.0,pow(self.num_output_nodes,-0.5),(self.num_output_nodes,self.num_hidden_nodes))
-    self.first_weights = numpy.random.rand(self.num_hidden_nodes,self.num_input_nodes) - 0.5
-    self.second_weights = numpy.random.rand(self.num_output_nodes,self.num_hidden_nodes) - 0.5
+    #self.first_weights = np.random.normal(0.0,pow(self.num_hidden_nodes,-0.5),(self.num_hidden_nodes,self.num_input_nodes))
+    #self.second_weights = np.random.normal(0.0,pow(self.num_output_nodes,-0.5),(self.num_output_nodes,self.num_hidden_nodes))
+    self.first_weights = np.random.rand(self.num_hidden_nodes,self.num_input_nodes) - 0.5
+    self.second_weights = np.random.rand(self.num_output_nodes,self.num_hidden_nodes) - 0.5
 
   def train(self,inputs_list,targets_list):
     # [TODO:explain in more detail]
-    inputs  = numpy.array(inputs_list,ndmin=2).T
-    targets = numpy.array(targets_list,ndmin=2).T
+    inputs  = np.array(inputs_list,ndmin=2).T
+    targets = np.array(targets_list,ndmin=2).T
 
-    hidden_in = numpy.matmul(self.first_weights,inputs)
+    hidden_in = np.matmul(self.first_weights,inputs)
     hidden_out = self.activation_function(hidden_in)
 
-    final_in = numpy.matmul(self.second_weights,hidden_out)
+    final_in = np.matmul(self.second_weights,hidden_out)
     final_out = self.activation_function(final_in)
 
-    # notice that our subtraction here is acting on numpy arrays
+    # notice that our subtraction here is acting on np arrays
     # this is our - very simple - COST FUNCTION. It's living here
     # for now - because it's so simple.
     output_errors = targets - final_out
 
 
     # use output errors to update weights between hidden layer and output layer
-    self.second_weights += self.learning_rate * numpy.matmul((output_errors * final_out  * (1.0 - final_out)),numpy.transpose(hidden_out))
+    self.second_weights += self.learning_rate * np.matmul((output_errors * final_out  * (1.0 - final_out)),np.transpose(hidden_out))
 
 
     # backprop errors from output_errors to hidden_errors
-    hidden_errors = numpy.matmul(self.second_weights.T,output_errors)
+    hidden_errors = np.matmul(self.second_weights.T,output_errors)
     # use hidden errors to update weights between input layer and hidden layer
-    self.first_weights += self.learning_rate * numpy.matmul((hidden_errors * hidden_out * (1.0 - hidden_out)),numpy.transpose(inputs))
+    self.first_weights += self.learning_rate * np.matmul((hidden_errors * hidden_out * (1.0 - hidden_out)),np.transpose(inputs))
 
 
   def forward_pass(self,inputs_list):
     # [TODO:explain in more detail]
-    inputs = numpy.array(inputs_list,ndmin=2).T
+    inputs = np.array(inputs_list,ndmin=2).T
 
-    hidden_inputs = numpy.matmul(self.first_weights,inputs)
+    hidden_inputs = np.matmul(self.first_weights,inputs)
     hidden_outputs = self.activation_function(hidden_inputs)
 
-    final_inputs = numpy.matmul(self.second_weights,hidden_outputs)
+    final_inputs = np.matmul(self.second_weights,hidden_outputs)
     final_outputs = self.activation_function(final_inputs)
     return(final_outputs)
 
@@ -84,14 +84,14 @@ for epoch in range(NUM_EPOCHS):
   for record in training_data_list:
     # put all values - including first actual digit - into a list
     all_values = record.split(',')
-    # make a numpy array of just the images pixels
+    # make a np array of just the images pixels
     # [TODO:explain in more detail]
-    inputs = (numpy.asfarray(all_values[1:])/255.0 * .99) + 0.01
+    inputs = (np.asfarray(all_values[1:])/255.0 * .99) + 0.01
 
     # create the output vector we want to see in this case
     # we should have all close-to-zeros, except for the slot
     # that represents the actual digit - there we want close-to-one
-    targets = numpy.zeros(NUM_OUTPUT_NODES) + 0.01
+    targets = np.zeros(NUM_OUTPUT_NODES) + 0.01
     targets[int(all_values[0])] = 0.99
 
     # go ahead and pass in the inputs and expected output to TeenNet to train
@@ -122,13 +122,13 @@ for record in test_data_list:
 
   # the inputs are all the values except the 0-th one
   # [TODO:explain in more detail]
-  inputs = (numpy.asfarray(all_values[1:]) / 255.0 *.99) + 0.01
+  inputs = (np.asfarray(all_values[1:]) / 255.0 *.99) + 0.01
 
   # ask TeenNet for the outputs, based on the inputs
   outputs = tNet.forward_pass(inputs)
 
-  # ask numpy to grab the biggest output, this is the first step in Michel's _translation_ function in this case
-  guessed_digit = numpy.argmax(outputs)
+  # ask np to grab the biggest output, this is the first step in Michel's _translation_ function in this case
+  guessed_digit = np.argmax(outputs)
 
 
   if(guessed_digit == actual_digit):
@@ -137,5 +137,5 @@ for record in test_data_list:
     scorecard.append(0) # ouch :(
 
 # trivial scoring - just percent correct
-scorecard_array = numpy.asarray(scorecard)
+scorecard_array = np.asarray(scorecard)
 print("Performance = ", scorecard_array.sum()/scorecard_array.size*100, "%")
