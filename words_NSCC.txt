@@ -213,6 +213,7 @@ linear regression   线性回归
 
 aggregate function  聚合函数
 
+
 mean, median, mode, variance, standard deviation (65, 95,99),z-scores and those tables
 平均值、中位数、模式、方差、标准偏差 (65、95、99)、z-分数和这些表格
 
@@ -233,6 +234,13 @@ rules of diff: chain, prod, quotient
 
 quick mention of gradient
 快速提及梯度
+
+
+kmeans inertia  kmeans惯性
+
+ensemble learning  集成学习
+
+
 
 =======================================================================
 super().__init__(maker, brand, model, year, color)
