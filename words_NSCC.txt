@@ -287,3 +287,8 @@ I need copy the rom to the environment folder, and run the command:
 python yac8e.py .\opcode.ch8
 =======================================================================
 
+How much wood would a woodchuck chuck if a woodchuck could chuck wood?
+如果一只土拨鼠能够扔掉木头，那么一只土拨鼠会扔掉多少木头？
+
+She sells sea shells by the sea shore. The shells she sells are surely sea shells. So if she sells shells on the sea shore, I'm sure she sells seashore shells.
+她在海边卖贝壳。她卖的贝壳肯定是海贝壳。所以如果她在海边卖贝壳，我敢肯定她在海边卖贝壳。
