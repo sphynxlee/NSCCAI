@@ -245,6 +245,9 @@ t-SNE t分布随机近似邻域嵌入
 hoist  吊起, 提升
 js variable hoisting js变量提升
 
+malignant 恶性的
+benign 良性的
+
 
 =======================================================================
 super().__init__(maker, brand, model, year, color)
