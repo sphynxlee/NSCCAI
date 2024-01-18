@@ -248,6 +248,8 @@ js variable hoisting js变量提升
 malignant 恶性的
 benign 良性的
 
+exponent    指数
+
 
 =======================================================================
 super().__init__(maker, brand, model, year, color)
