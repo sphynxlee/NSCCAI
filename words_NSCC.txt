@@ -250,6 +250,8 @@ benign 良性的
 
 exponent    指数
 
+disarium number  不幸数
+
 
 =======================================================================
 super().__init__(maker, brand, model, year, color)
