@@ -166,6 +166,7 @@ polymorphism    多态性
 Fourier 傅立叶
 
 nudge   轻推
+nudges on those drops from the air molecules  空气分子的液滴上的轻推
 
 pillars  柱子
 
