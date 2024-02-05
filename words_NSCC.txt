@@ -307,3 +307,9 @@ https://vitejs.dev/guide/
 npm create vite@latest
 npm install
 npm run dev
+=======================================================================
+mac-cleanup-sh:
+installation:
+curl -fsSL https://dub.sh/mcleanup | bash -s update
+in .zshrc:
+alias clean="sudo /usr/local/bin/mac-cleanup"
