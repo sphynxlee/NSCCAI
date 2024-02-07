@@ -304,12 +304,19 @@ She sells sea shells by the sea shore. The shells she sells are surely sea shell
 
 =======================================================================
 https://vitejs.dev/guide/
+
+// create a new project with the "vite" template
 npm create vite@latest
-npm install
-npm run dev
+
+Done. Now run:
+  cd your-project-name
+  npm install
+  npm run dev
+
 =======================================================================
 mac-cleanup-sh:
 installation:
 curl -fsSL https://dub.sh/mcleanup | bash -s update
 in .zshrc:
 alias clean="sudo /usr/local/bin/mac-cleanup"
+
