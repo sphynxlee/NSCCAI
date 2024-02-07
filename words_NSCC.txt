@@ -320,3 +320,7 @@ curl -fsSL https://dub.sh/mcleanup | bash -s update
 in .zshrc:
 alias clean="sudo /usr/local/bin/mac-cleanup"
 
+=======================================================================
+zustand vs redux:
+https://www.youtube.com/watch?v=0g0o7e3d3mE
+https://www.youtube.com/watch?v=6p1Jl8j3zKg
