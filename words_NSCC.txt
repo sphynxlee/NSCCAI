@@ -334,3 +334,8 @@ run injest.py first, and then follow the hint to install the package.
 chainlit run model.py
 =======================================================================
 python -m venv myenv
+# go to the folder Scripts, and run activate
+# go back to the root folder, and run pip install -r requirements.txt
+cd myenv/Scripts
+activate.bat(cmd) activate.ps1(powershell)
+pip install flask
