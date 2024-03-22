@@ -257,6 +257,7 @@ regress 退化
 sanity  理智
 conjunction 连接
 
+mathematical pursue 数学追求
 
 =======================================================================
 super().__init__(maker, brand, model, year, color)
