@@ -259,6 +259,8 @@ conjunction 连接
 
 mathematical pursue 数学追求
 
+ML: assignment2 slide 17
+
 =======================================================================
 super().__init__(maker, brand, model, year, color)
 This line of code is calling the __init__ method of the superclass (or parent class) in a Python class inheritance hierarchy.
