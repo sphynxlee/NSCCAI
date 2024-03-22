@@ -253,6 +253,10 @@ exponent    指数
 
 disarium number  不幸数
 
+regress 退化
+sanity  理智
+conjunction 连接
+
 
 =======================================================================
 super().__init__(maker, brand, model, year, color)
