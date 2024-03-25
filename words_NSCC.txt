@@ -346,6 +346,9 @@ python -m venv myenv
 cd myenv/Scripts
 activate.bat(cmd) activate.ps1(powershell)
 pip install flask
+
+# then run the app.py
+python app.py
 =======================================================================
 Jest:
 
