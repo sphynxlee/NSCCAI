@@ -320,6 +320,8 @@ Done. Now run:
   npm install
   npm run dev
 
+
+...\rtl> npx create-react-app .
 =======================================================================
 mac-cleanup-sh:
 installation:
